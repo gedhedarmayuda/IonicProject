@@ -1,0 +1,42 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title> Blank </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-label>Label</ion-label>
+  <ion-list>
+    <ion-radio-group name="auto" value="tesla">
+      <ion-list-header>
+        <ion-label>Auto Manufacturers</ion-label>
+      </ion-list-header>
+      <ion-item>
+        <ion-label>Tesla</ion-label>
+        <ion-radio value="tesla"></ion-radio>
+      </ion-item>
+      <ion-item>
+        <ion-label>Ford</ion-label>
+        <ion-radio value="ford"></ion-radio>
+      </ion-item>
+    </ion-radio-group>
+  </ion-list>
+  <ion-list>
+    <ion-item>
+      <ion-label>Extra ketchup</ion-label>
+      <ion-toggle></ion-toggle>
+    </ion-item>
+    <ion-item>
+      <ion-label>Resized Drink</ion-label>
+      <ion-toggle></ion-toggle>
+    </ion-item>
+    <ion-item>
+      <ion-label>Extra Large fries(sorry not available)</ion-label>
+      <ion-toggle disabled="true"></ion-toggle>
+    </ion-item>
+    <ion-item>
+      <ion-label>Vanilla Sundae</ion-label>
+      <ion-toggle></ion-toggle>
+    </ion-item>
+  </ion-list>
+</ion-content>
