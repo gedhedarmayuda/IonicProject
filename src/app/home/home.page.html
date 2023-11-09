@@ -1,20 +1,38 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
     <ion-title>
-      Blank
+      Kepler Third Law Calculator
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
-    </ion-toolbar>
-  </ion-header>
-
-  <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
-  </div>
+  <ion-list class="ion-padding ion-text-center">
+    <ion-label position="stacked">Mass 1 Object (M1)</ion-label>
+    <ion-input [(ngModel)]="m1" type="number" fill="outline"></ion-input>
+  </ion-list>
+  <ion-list class="ion-padding ion-text-center">
+    <ion-label position="stacked">Mass 2 Object (M2)</ion-label>
+    <ion-input [(ngModel)]="m2"type="number" fill="outline"></ion-input>
+  </ion-list>
+  <ion-list class="ion-padding ion-text-center">
+    <ion-label position="stacked">Gravitational Constant (G)</ion-label>
+    <ion-input [(ngModel)]="g" type="number" fill="outline"></ion-input>
+  </ion-list>
+  <ion-list class="ion-padding ion-text-center">
+    <ion-label position="stacked">Semi-major Axis of the orbit (a)</ion-label>
+    <ion-input [(ngModel)]="a" type="number" fill="outline"></ion-input>
+  </ion-list>
+  <ion-list class="ion-padding ion-text-center">
+    <ion-label position="stacked">Orbital Period (T)</ion-label>
+    <ion-input [(ngModel)]="t2" type="number" fill="outline" disabled="true"></ion-input>
+  </ion-list>
+  <ion-list>
+    <ion-button (click)="keplerThird()" expand="block" shape="round">
+      Calculate
+    </ion-button>
+    <ion-button (click)="reset()" expand="block" shape="round">
+      Reset
+    </ion-button>
+  </ion-list>
 </ion-content>
