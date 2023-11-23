@@ -1,0 +1,129 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title class="ion-text-center">
+      Title
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-text color="primary" class="ion-text-center">
+    <p>Ion Grid</p>
+  </ion-text>
+  <div>
+    <ion-grid fixed>
+      <ion-row>
+        <ion-col size="3">Student No.</ion-col>
+        <ion-col>Student Name</ion-col>
+        <ion-col>Section</ion-col>
+        <ion-col>Age</ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col>20201067</ion-col>
+        <ion-col>Gedhe Darma Yuda</ion-col>
+        <ion-col>BSIT</ion-col>
+        <ion-col>23</ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col>20201148</ion-col>
+        <ion-col>Agung Darma Putra</ion-col>
+        <ion-col>BSIT</ion-col>
+        <ion-col>21</ion-col>
+      </ion-row>
+    </ion-grid>
+  </div>
+  <div>
+    <ion-tabs>
+      <ion-tab-bar slot="bottom">
+        <ion-tab-button tab="User">
+          <ion-icon name="person"></ion-icon>
+          <ion-label>User</ion-label>
+        </ion-tab-button>
+        <ion-tab-button tab="Home">
+          <ion-icon name="home"></ion-icon>
+          <ion-label>Home</ion-label>
+        </ion-tab-button>
+        <ion-tab-button tab="Setup">
+          <ion-icon name="settings"></ion-icon>
+          <ion-label>Settings</ion-label>
+        </ion-tab-button>
+      </ion-tab-bar>
+    </ion-tabs>
+  </div>
+  <ion-text color="primary" class="ion-text-center">
+    <p>Ion Select</p>
+  </ion-text>
+  <div>
+    <ion-list>
+      <ion-list-header>
+        <ion-header>Single Selection</ion-header>
+      </ion-list-header>
+      <ion-item>
+        <ion-label>Type of Computer(Choose only one)</ion-label>
+        <ion-select>
+          <ion-select-option value="f">Desktop</ion-select-option>
+          <ion-select-option value="m">Laptop</ion-select-option>
+        </ion-select>
+      </ion-item>
+      <ion-item>
+        <ion-label>Type of Mobile Device(Choose only one)</ion-label>
+        <ion-select value="tablet" okText="Okay" cancelText="Cancel">
+          <ion-select-option value="Android">Android</ion-select-option>
+          <ion-select-option value="Tablet">Tablet</ion-select-option>
+          <ion-select-option value="Blackberry">Blackberry</ion-select-option>
+          <ion-select-option value="IOS">Iphone</ion-select-option>
+        </ion-select>
+      </ion-item>
+      <ion-item>
+        <ion-label>Topping</ion-label>
+        <ion-select value="tablet" okText="Okay" cancelText="Cancel" multiple="true">
+          <ion-select-option value="peppers">Green Papers</ion-select-option>
+          <ion-select-option value="anchovy">Anchovy</ion-select-option>
+          <ion-select-option value="onions">Onions</ion-select-option>
+          <ion-select-option value="pepperoni">Pepperoni</ion-select-option>
+          <ion-select-option value>Salmon</ion-select-option>
+        </ion-select>
+      </ion-item>
+    </ion-list>
+  </div>
+  <div>
+    <ion-list>
+      <ion-item>
+        <ion-label slot="start">Room Light</ion-label>
+        <ion-range color="danger" pin="true"></ion-range>
+      </ion-item>
+      <ion-item>
+        <ion-label>Air Condition</ion-label>
+        <ion-range min="-16" max="25" color="secondary" pin="true">
+          <ion-label slot="start">-16</ion-label>
+          <ion-label slot="end">25</ion-label>
+        </ion-range>
+      </ion-item>
+      <ion-item>
+        <ion-label>Study Room</ion-label>
+        <ion-range min="10" max="100" step="2" pin="true">
+          <ion-icon size="small" slot="start" name="light"></ion-icon>
+          <ion-icon slot="end" name="sunny"></ion-icon>
+        </ion-range>
+      </ion-item>
+      <ion-item>
+        <ion-label>TV Room Light</ion-label>
+      </ion-item>
+      <ion-item>
+        <ion-range min="0" max="100" step="2" snaps="true" color="secondary">
+        </ion-range>
+      </ion-item>
+      <ion-item>
+        <ion-label>Light in Dining Room</ion-label>
+      </ion-item>
+      <ion-item>
+        <ion-range min="0" max="100" step="10" snaps="true" ticks="false" color="secondary">
+        </ion-range>
+      </ion-item>
+      <ion-item>
+        <ion-label>Kitchen Light</ion-label>
+        <ion-range dualKnobs="true" min="0" max="20" step="2" pin="true" ticks="false" snaps="true"></ion-range>
+      </ion-item>
+    </ion-list>
+  </div>
+</ion-content>

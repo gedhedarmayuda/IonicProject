@@ -1,0 +1,29 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Blank
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">Blank</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  <div id="container">
+    <ion-label>Enter your 1st Number: </ion-label>
+    <ion-input type="text" [(ngModel)]="FirstNumber"></ion-input>
+    <ion-label>Enter your 2st Number: </ion-label>
+    <ion-input type="text" [(ngModel)]="SecondNumber"></ion-input>
+    <ion-label>Enter your 3st Number: </ion-label>
+    <ion-input type="text" [(ngModel)]="ThirdNumber"></ion-input>
+    <ion-label>Answer</ion-label>
+    <ion-input type="text" [(ngModel)]="Ans"></ion-input>
+    <ion-label>The sum is {{Ans}}</ion-label>
+    <p></p>
+    <ion-button (click)="MySum()">COMPUTE</ion-button>
+    <ion-button (click)="Reset()">RESET</ion-button>
+  </div>
+</ion-content>
