@@ -1,0 +1,36 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      NEUST BIOLOGY EXAM
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <div id="container">
+    <ion-label>Which of the following animals is the tallest?</ion-label>
+    <ion-list>
+      <ion-radio-group name="question1" [(ngModel)]="Question1" (ionChange)="SeeAnswer1()">
+        <ion-item>
+          <ion-label>Elephant</ion-label>
+          <ion-radio name="Question1" value="a"></ion-radio>
+        </ion-item>
+        <ion-item>
+          <ion-label>Hippopotamus</ion-label>
+          <ion-radio name="Question1" value="b"></ion-radio>
+        </ion-item>
+        <ion-item>
+          <ion-label>Giraffe</ion-label>
+          <ion-radio name="Question1" value="c"></ion-radio>
+        </ion-item>
+        <ion-item>
+          <ion-label>Zebra</ion-label>
+          <ion-radio name="Question1" value="d"></ion-radio>
+        </ion-item>
+      </ion-radio-group>
+    </ion-list>
+    <p>
+      <ion-input type="text" [(ngModel)]="remarks1"></ion-input>
+    </p>
+  </div>
+</ion-content>
